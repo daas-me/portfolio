@@ -244,8 +244,8 @@ PROJECTS = [
         "desc": "Built a web application for booking ferry rides between islands in the Philippines. Implemented the front-end using CSS and JavaScript, integrating real-time schedule data using a third-party API, user-friendly booking interface, and admin dashboard.",
         "status": "Live",
         "tags": ["HTML", "CSS", "JavaScript", "Django", "API Integration", "Supabase", "Web App"],
-        "img_url": "",
-        "link": "https://www.harborhop.onrender.com",
+        "img_url": "https://raw.githubusercontent.com/daas-me/portfolio/main/assets/harborhop.jpg",
+        "link": "https://harborhop.onrender.com/",
     },
     {
         "name": "Lexicon - Hotel Booking App",
@@ -254,7 +254,7 @@ PROJECTS = [
         "desc": "Crafted a UI design and brand identity for a hotel booking app that focuses on simple yet sophisticated aesthetics. Created a design system in Figma, developed high-fidelity prototypes, and developed full-scale branding assets including logo, color palette, and typography guidelines.",
         "status": "Live",
         "tags": ["Figma", "Canva", "Accessibility", "Branding", "Mobile Design"],
-        "img_url": "",
+        "img_url": "https://raw.githubusercontent.com/daas-me/portfolio/main/assets/lexicon_brand.jpg",
         "link": "https://www.figma.com/design/Y2TdAsPcxmYgs7MFRCPJ2q/Lexicon---Sabandal?t=WVygcCgq8vdul8Qf-1",
     },
     {
@@ -265,7 +265,7 @@ PROJECTS = [
         "desc": "Designed and developed a responsive author website template using HTML, CSS, and JavaScript. The template is fully customizable and includes features like a blog section, contact form, and portfolio showcase.",
         "status": "Live",
         "tags": ["HTML", "CSS", "JavaScript", "Figma", "Web App"],
-        "img_url": "",
+        "img_url": "https://raw.githubusercontent.com/daas-me/portfolio/main/assets/author_website_template.jpg",
         "link": "https://www.figma.com/design/nBaoUTHL1nhS3lC43pnrTX/Author-Website?node-id=0-1&t=vZdOKKX48TGTIMee-1",
     },
 ]
