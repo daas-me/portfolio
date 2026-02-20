@@ -169,7 +169,7 @@ with st.sidebar:
 
     st.markdown("<div style='font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:#3a3a3a;margin-bottom:0.7rem;'>Quick Stats</div>", unsafe_allow_html=True)
     st.metric("Projects", "3+", "portfolio")
-    st.metric("Experience", "1+ yr", "work")
+    st.metric("Experience", "4 roles", "professional")
     st.metric("Location", "Cebu", "PH")
 
     st.divider()
@@ -235,34 +235,45 @@ def proj_card(proj):
 # ─────────────────────────────────────────────
 PROJECTS = [
     {
-        "name": "Bloom — Wellness App",
-        "year": 2024,
+        "name": "NavU - Campus Navigation App",
+        "year": 2025,
         "cat": "Mobile UI / UX Research",
-        "desc": "End-to-end redesign of a mental wellness app. Led user interviews, affinity mapping, and delivered high-fidelity Figma prototypes across iOS and Android.",
+        "desc": "Designed a campus navigation app that caters not only to academic institutions but also to large corporate campuses. Conducted user interviews and usability testing with over 50 participants to validate design decisions.",
         "status": "Live",
         "tags": ["Figma", "UX Research", "Prototyping", "Mobile"],
-        "img_url": "",   # ← paste screenshot URL
-        "link": "#",     # ← paste live link
+        "img_url": "assets/navu_splash.jpg", 
+        "link": "https://www.figma.com/design/h981ildHFNZQXtHN6IOe5o/NavU-Mockup?node-id=0-1&t=WVygcCgq8vdul8Qf-1",   
     },
     {
-        "name": "Folio — Portfolio Builder",
-        "year": 2024,
+        "name": "HarborHop - Ferry Booking Platform",
+        "year": 2025,
         "cat": "Web App / Front-End Dev",
-        "desc": "A drag-and-drop portfolio generator built for creatives. Features real-time preview, custom themes, and one-click export to static HTML.",
+        "desc": "Built a web application for booking ferry rides between islands in the Philippines. Implemented the front-end using CSS and JavaScript, integrating real-time schedule data using a third-party API, user-friendly booking interface, and admin dashboard.",
         "status": "Live",
-        "tags": ["React", "TypeScript", "Tailwind CSS"],
+        "tags": ["HTML", "CSS", "JavaScript", "Django", "API Integration", "Supabase", "Web App"],
         "img_url": "",
-        "link": "#",
+        "link": "https://www.harborhop.onrender.com",
     },
     {
-        "name": "Wayfind — Travel Planner",
-        "year": 2023,
-        "cat": "Web App / UX Design",
-        "desc": "AI-assisted travel itinerary planner with interactive map integration. Validated through three rounds of moderated usability testing with 12 participants.",
-        "status": "Beta",
-        "tags": ["Figma", "User Testing", "Accessibility", "AI"],
+        "name": "Lexicon - Hotel Booking App",
+        "year": 2024,
+        "cat": "Mobile UI Design / Brand Identity",
+        "desc": "Crafted a UI design and brand identity for a hotel booking app that focuses on simple yet sophisticated aesthetics. Created a design system in Figma, developed high-fidelity prototypes, and developed full-scale branding assets including logo, color palette, and typography guidelines.",
+        "status": "Live",
+        "tags": ["Figma", "Canva", "Accessibility", "Branding", "Mobile Design"],
         "img_url": "",
-        "link": "#",
+        "link": "https://www.figma.com/design/Y2TdAsPcxmYgs7MFRCPJ2q/Lexicon---Sabandal?t=WVygcCgq8vdul8Qf-1",
+    },
+    {
+    
+        "name": "Author Website - Template Design & Development",
+        "year": 2023,
+        "cat": "UI / UX Design",
+        "desc": "Designed and developed a responsive author website template using HTML, CSS, and JavaScript. The template is fully customizable and includes features like a blog section, contact form, and portfolio showcase.",
+        "status": "Live",
+        "tags": ["HTML", "CSS", "JavaScript", "Figma", "Web App"],
+        "img_url": "",
+        "link": "https://www.figma.com/design/nBaoUTHL1nhS3lC43pnrTX/Author-Website?node-id=0-1&t=vZdOKKX48TGTIMee-1",
     },
 ]
 PROJECTS.sort(key=lambda p: p["year"], reverse=True)
@@ -303,7 +314,7 @@ if page == "Home":
 
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Projects", "3+", "delivered")
-    k2.metric("Experience", "1+ yr", "professional")
+    k2.metric("Experience", "4 roles", "professional")
     k3.metric("Education", "BSIT", "in progress")
     k4.metric("Location", "Cebu", "Philippines")
 
@@ -316,7 +327,7 @@ if page == "Home":
         <div class="card" style="text-align:center;padding:2rem 1.5rem;">
             <i class="fa-solid fa-palette" style="color:#4ade80;font-size:2rem;margin-bottom:14px;display:block;"></i>
             <div class="card-title" style="margin-bottom:8px;">UI/UX Design</div>
-            <div class="card-body">I craft user-centered interfaces through research, wireframing, and high-fidelity prototyping — always starting with the person behind the screen.</div>
+            <div class="card-body">From Figma wireframes to polished prototypes, I design interfaces that are grounded in how people actually think and behave — not just how they look on a mockup.</div>
         </div>
         """, unsafe_allow_html=True)
     with d2:
@@ -324,15 +335,15 @@ if page == "Home":
         <div class="card" style="text-align:center;padding:2rem 1.5rem;">
             <i class="fa-solid fa-code" style="color:#4ade80;font-size:2rem;margin-bottom:14px;display:block;"></i>
             <div class="card-title" style="margin-bottom:8px;">Front-End Dev</div>
-            <div class="card-body">I translate designs into clean, responsive code using HTML, CSS, JavaScript, and React — bridging the gap between Figma and the browser.</div>
+            <div class="card-body">I've been writing HTML, CSS, and JavaScript since 2017. Today I build with React and Python — turning designs into real, working products without needing a middleman.</div>
         </div>
         """, unsafe_allow_html=True)
     with d3:
         st.markdown("""
         <div class="card" style="text-align:center;padding:2rem 1.5rem;">
-            <i class="fa-solid fa-magnifying-glass-chart" style="color:#4ade80;font-size:2rem;margin-bottom:14px;display:block;"></i>
-            <div class="card-title" style="margin-bottom:8px;">UX Research</div>
-            <div class="card-body">I run user interviews, usability tests, and synthesize findings into actionable design decisions that move products forward.</div>
+            <i class="fa-solid fa-comments" style="color:#4ade80;font-size:2rem;margin-bottom:14px;display:block;"></i>
+            <div class="card-title" style="margin-bottom:8px;">Client Communication</div>
+            <div class="card-body">Years of customer-facing work — from travel sales to lead generation — mean I know how to listen well, manage expectations, and keep projects moving smoothly.</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -354,10 +365,10 @@ if page == "Home":
     sh("How I Work", "My Process")
     pr1, pr2, pr3, pr4 = st.columns(4)
     steps = [
-        ("01", "fa-solid fa-comments",    "Discover", "I start by listening — understanding the problem, the users, and the goals through research and stakeholder conversations."),
-        ("02", "fa-solid fa-pen-ruler",   "Define",   "I synthesize findings into clear problem statements, user flows, and information architecture before touching any visuals."),
-        ("03", "fa-solid fa-bezier-curve","Design",   "Low-fidelity sketches evolve into polished, interactive prototypes — tested, iterated, and refined."),
-        ("04", "fa-solid fa-rocket",      "Deliver",  "I hand off production-ready designs and, where applicable, build the front-end myself for seamless implementation."),
+        ("01", "fa-solid fa-ear-listen",   "Listen", "Every project starts with understanding — the client's goals, the end user's frustrations, and the constraints that actually matter. I ask a lot of questions before touching any tools."),
+        ("02", "fa-solid fa-pen-ruler",    "Structure", "I map out user flows, information architecture, and content hierarchy before any visuals. Good structure makes everything downstream easier."),
+        ("03", "fa-solid fa-bezier-curve", "Design", "Rough sketches become wireframes, wireframes become prototypes. I test early, iterate often, and only polish when the foundation is solid."),
+        ("04", "fa-solid fa-laptop-code",  "Build", "Where possible, I build it myself — HTML, CSS, JavaScript, React, or Python. Handing off to a developer is a last resort, not the default."),
     ]
     for col, (num, icon, title, body) in zip([pr1, pr2, pr3, pr4], steps):
         with col:
@@ -406,15 +417,14 @@ elif page == "About Me":
         st.markdown("""
         <div class="card">
             <p class="card-body">
-                Hi — I'm <strong style="color:#d4d0cb;">Dwight Angelo Sabandal</strong>, a UI/UX designer and
+                Hi — I'm <strong style="color:#d4d0cb;">Dwight Angelo Sabandal</strong>, an aspiring UI/UX designer and
                 front-end developer from Cebu, Philippines. My passion sits at the intersection of aesthetics
                 and engineering — I believe the best digital products are crafted by people who are equally
                 fluent in pixels and code.
             </p>
             <p class="card-body" style="margin-top:1rem;">
                 I'm currently pursuing a <strong style="color:#d4d0cb;">Bachelor of Science in Information Technology</strong>
-                at Cebu Institute of Technology – University, where I've channeled my studies into real-world
-                design and development work. Over the past year, I've worked across the full product lifecycle —
+                at Cebu Institute of Technology – University. Over the past year, I've worked across the full product lifecycle —
                 from user research and information architecture through high-fidelity Figma prototypes to
                 production-ready web and mobile applications.
             </p>
@@ -459,25 +469,25 @@ elif page == "About Me":
     sk1, sk2, sk3 = st.columns(3)
     with sk1:
         st.markdown('<div class="skill-category-label"><i class="fa-solid fa-palette fa-fw" style="margin-right:6px;"></i>Design</div>', unsafe_allow_html=True)
-        skill_bar("UI/UX Design", 90)
-        skill_bar("Figma", 88)
+        skill_bar("UI/UX Design", 92)
+        skill_bar("Figma", 90)
         skill_bar("Wireframing", 85)
         skill_bar("Prototyping", 82)
         skill_bar("Design Systems", 75)
-        skill_bar("Adobe XD", 68)
+        skill_bar("Canva", 95)
     with sk2:
         st.markdown('<div class="skill-category-label"><i class="fa-solid fa-code fa-fw" style="margin-right:6px;"></i>Development</div>', unsafe_allow_html=True)
         skill_bar("HTML / CSS", 92)
         skill_bar("JavaScript", 78)
-        skill_bar("React", 72)
-        skill_bar("Tailwind CSS", 80)
-        skill_bar("Python", 65)
-        skill_bar("Streamlit", 70)
+        skill_bar("React", 55)
+        skill_bar("Java", 84)
+        skill_bar("Python", 70)
+        skill_bar("Streamlit", 65)
     with sk3:
         st.markdown('<div class="skill-category-label"><i class="fa-solid fa-wrench fa-fw" style="margin-right:6px;"></i>Tools & Other</div>', unsafe_allow_html=True)
-        skill_bar("Git / GitHub", 75)
+        skill_bar("Git / GitHub", 80)
         skill_bar("VS Code", 90)
-        skill_bar("Webflow", 65)
+        skill_bar("Jira", 65)
         skill_bar("User Research", 80)
         skill_bar("Communication", 88)
         skill_bar("Problem Solving", 85)
@@ -488,10 +498,10 @@ elif page == "About Me":
     sh("Beyond Work", "Personal Interests")
 
     interests = [
-        ("fa-solid fa-pen-nib",   "Typography & Calligraphy", "A deep appreciation for letterforms that bleeds directly into how I approach type in interfaces."),
-        ("fa-solid fa-camera",    "Photography",              "Mostly architecture and street — training my eye for composition, light, and negative space."),
-        ("fa-solid fa-book-open", "Reading",                  "Currently into interaction design theory, science fiction, and the occasional philosophy tangent."),
-        ("fa-solid fa-gamepad",   "Game Design",              "I love dissecting UI/UX patterns in video games — a goldmine of unconventional interaction design."),
+        ("fa-solid fa-user-astronaut",   "Astronomy", "I enjoy stargazing and astrophotography — a humbling reminder of our place in the universe and a source of endless inspiration for design."),
+        ("fa-solid fa-camera",    "Photography", "I have a soft spot for nature and landscape photography. I find that the principles of composition and lighting in photography deeply inform my approach to visual design."),
+        ("fa-solid fa-person-hiking", "Hiking/Exploring", "I enjoy exploring the outdoors especially if it is away from the city. I find that being in nature helps me reset and often sparks creative ideas for my design work."),
+        ("fa-solid fa-gamepad",   "Gaming", "I play games that are rich in narrative and world-building — I find that well-designed games can teach us a lot about user engagement, feedback loops, and immersive experience design."),
     ]
     i1, i2, i3, i4 = st.columns(4)
     for col, (icon, title, body) in zip([i1, i2, i3, i4], interests):
@@ -512,13 +522,13 @@ elif page == "About Me":
     education = [
         {"title": "Bachelor of Science in Information Technology",
          "org": "Cebu Institute of Technology – University", "year": "Aug 2023 – Present",
-         "desc": "Specializing in web systems and UI/UX design. Active member of the GDSC and CIT-U Design Guild."},
+         "desc": "Specializing in web systems and UI/UX design."},
         {"title": "Senior High School – STEM Strand",
          "org": "Cebu Institute of Technology – University", "year": "Jun 2019 – Oct 2021",
-         "desc": "Graduated with honors. Served as layout artist for the school paper."},
+         "desc": "Graduated with honors."},
         {"title": "Junior High School",
          "org": "St. Mary's Academy – Oslob", "year": "Jun 2015 – Apr 2019",
-         "desc": "Consistent honor student. Active in the arts and technology club."},
+         "desc": "Consistent honor student. Taught computer subject as a student teacher."},
         {"title": "Elementary",
          "org": "Oslob Central Elementary School", "year": "Jun 2009 – Apr 2015", "desc": ""},
     ]
@@ -536,13 +546,15 @@ elif page == "About Me":
     st.divider()
 
     # ── Certifications ──
-    sh("Credentials", "Certifications & Recognition")
+    sh("Credentials", "Certifications")
 
     certs = [
-        ("fa-solid fa-certificate", "Google UX Design Certificate",  "Google — Coursera · 2024"),
-        ("fa-solid fa-award",       "Responsive Web Design",          "freeCodeCamp · 2023"),
-        ("fa-solid fa-star",        "Dean's List",                    "CIT-University · 2023–2024"),
-        ("fa-solid fa-trophy",      "Best Thesis Proposal",           "CIT-U IT Department · 2024"),
+        ("fa-solid fa-certificate", "Java Object-Oriented Programming Certification",  "CodeChum · May 2025"),
+        ("fa-solid fa-certificate", "Data Visualization",  "Kaggle · December 2025"),
+        ("fa-solid fa-certificate", "ICT Student Congress 2025", "PSiTE7 · May 2025"),
+        ("fa-solid fa-certificate", "Graphic Design Essentials", "Canva · September 2024"),
+        ("fa-solid fa-certificate", "Introduction to Java", "Sololearn · May 2025"),
+        ("fa-solid fa-certificate", "Digital Marketing", "HubSpot Academy · April 2025 - May 2026"),
     ]
     c1, c2 = st.columns(2)
     for i, (icon, title, sub) in enumerate(certs):
@@ -556,7 +568,6 @@ elif page == "About Me":
                 </div>
             </div>
             """, unsafe_allow_html=True)
-
 
 # ══════════════════════════════════════════════
 #  PORTFOLIO
@@ -602,25 +613,32 @@ elif page == "Experience":
 
     experiences = [
         {
-            "year": "2024 – Present",
-            "title": "UI/UX Designer & Front-End Developer",
-            "org": "Freelance — Remote",
-            "desc": "Working with early-stage startups and small businesses across Southeast Asia to design and build their web and mobile products. Handling the full design lifecycle from discovery workshops and wireframes through to shipped code.",
-            "tags": ["Figma", "React", "Tailwind CSS", "User Research"],
+            "year": "July 2025 – October 2025",
+            "title": "Travel Sales Representative",
+            "org": "Dyninno — Cebu City",
+            "desc": "Assisted customers in booking travel arrangements, providing excellent service and support. Handled inquiries, resolved issues, and contributed to a positive customer experience.",
+            "tags": ["Customer Service", "Travel Planning", "Sales", "Problem Solving"],
         },
         {
-            "year": "2023 – 2024",
-            "title": "UI/UX Design Intern",
-            "org": "Local Tech Startup — Cebu City",
-            "desc": "Embedded within the product team, contributing to a customer-facing dashboard redesign. Ran moderated usability tests, synthesized findings into actionable design updates, and collaborated directly with engineers on implementation.",
-            "tags": ["Figma", "Usability Testing", "Design Systems", "Handoff"],
+            "year": "October 2022 – June 2023",
+            "title": "Lead Generation Specialist",
+            "org": "Worldwide Innovative Publications — Oslob, Cebu",
+            "desc": "Generated and qualified leads for the sales team through targeted outreach and research. Utilized CRM tools to track interactions and optimize lead conversion strategies.",
+            "tags": ["CRM", "Lead Qualification", "Sales Enablement", "Data Analysis"],
         },
         {
-            "year": "2022 – 2023",
-            "title": "Freelance Web Designer",
+            "year": "January 2022 – July 2022",
+            "title": "Merchandise Checker",
+            "org": "Gaisano Grand Mall — Oslob, Cebu",
+            "desc": "Ensured accurate pricing and labeling of merchandise, checked for item damage, and maintained inventory records. Interacted with customers to assist with product inquiries.",
+            "tags": ["Attention to Detail", "Customer Service", "Inventory Management", "Problem Solving"],
+        },
+        {
+            "year": "August 2017 – Present",
+            "title": "Freelance Designer & Developer",
             "org": "Self-Employed",
-            "desc": "Designed and developed landing pages and branding assets for local businesses and individual clients. Focused on clean, mobile-first layouts and quick turnarounds.",
-            "tags": ["HTML/CSS", "Webflow", "Branding", "Responsive Design"],
+            "desc": "Designed and developed websites for clients across various industries. Focused on responsive design, user experience, and clean code.",
+            "tags": ["UI/UX Design", "Web Development", "Responsive Design", "Client Collaboration"],
         },
     ]
 
@@ -644,11 +662,11 @@ elif page == "Experience":
     v1, v2, v3 = st.columns(3)
     values = [
         ("fa-solid fa-arrows-left-right", "Design + Dev Fluency",
-         "I speak both languages. I can sit in a design crit and a code review on the same day — no translation layer needed."),
-        ("fa-solid fa-users",             "Collaborative by Default",
-         "I involve stakeholders early, communicate openly, and treat feedback as fuel rather than friction."),
-        ("fa-solid fa-bolt",              "Fast, Iterative Delivery",
-         "I default to shipping early and often. Prototypes over decks, working code over documentation."),
+         "I bridge both worlds — from high-fidelity Figma prototypes to production-ready front-end code. No handoff friction, no lost-in-translation moments."),
+        ("fa-solid fa-headset",           "People-First Communicator",
+         "Years of customer-facing roles in sales and service have sharpened my ability to listen actively, communicate clearly, and deliver exactly what people need."),
+        ("fa-solid fa-chart-line",        "Detail-Oriented & Data-Aware",
+         "A background in lead qualification and inventory management means I bring structured, analytical thinking to every design decision — nothing ships without purpose."),
     ]
     for col, (icon, title, body) in zip([v1, v2, v3], values):
         with col:
@@ -666,10 +684,10 @@ elif page == "Experience":
     sh("Toolkit", "Tools I Use Daily")
 
     tools = {
-        "Design":      ["Figma", "Adobe XD", "FigJam", "Canva"],
-        "Development": ["VS Code", "React", "Tailwind CSS", "Streamlit"],
-        "Workflow":    ["Git", "GitHub", "Notion", "Linear"],
-        "Research":    ["Maze", "Hotjar", "Google Forms", "Miro"],
+        "Design":      ["Figma", "Canva", "Adobe Illustrator", "Blender"],
+        "Development": ["HTML / CSS", "JavaScript", "React", "VS Code"],
+        "Workflow":    ["Git", "GitHub", "Jira", "Streamlit"],
+        "Sales & CRM": ["CRM Tools", "Google Forms", "Google Sheets", "HubSpot"],
     }
     t1, t2, t3, t4 = st.columns(4)
     for col, (category, tool_list) in zip([t1, t2, t3, t4], tools.items()):
@@ -687,12 +705,15 @@ elif page == "Experience":
 
     st.divider()
 
-    resume_text = "Dwight Angelo Sabandal — Resume\n\n[Replace this with your actual resume content.]\n\nEmail: sabandaldwightangelo@gmail.com\nLinkedIn: linkedin.com/in/dwight-angelo-sabandal-b2463b247\nGitHub: github.com/daas-me"
+    # ── Resume Download ──
+    with open("assets/sabandal_cv.pdf", "rb") as f:
+        pdf_data = f.read()
+
     st.download_button(
         label="⬇  Download Resume",
-        data=resume_text,
-        file_name="DwightAngelo_Sabandal_Resume.txt",
-        mime="text/plain",
+        data=pdf_data,
+        file_name="sabandal_cv.pdf",
+        mime="application/pdf",
         use_container_width=True,
     )
 
@@ -784,6 +805,6 @@ elif page == "Contact":
 # ── Footer ──
 st.markdown("""
 <div style="text-align:center;padding:1rem 0 0.5rem;font-size:0.72rem;color:#3a3a3a;letter-spacing:2px;">
-    © 2026 DWIGHT ANGELO SABANDAL &nbsp;·&nbsp; BUILT WITH STREAMLIT &nbsp;·&nbsp; CEBU, PH
+    © 2026 DWIGHT ANGELO SABANDAL &nbsp;
 </div>
 """, unsafe_allow_html=True)
