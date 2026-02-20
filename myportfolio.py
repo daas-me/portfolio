@@ -63,7 +63,7 @@ html, body, [class*="css"] { font-family: 'Outfit', sans-serif; }
 /* Project Cards */
 .proj-card { background: #161616; border: 1px solid #242424; border-radius: 14px; overflow: hidden; transition: border-color 0.25s, transform 0.2s; margin-bottom: 1rem; }
 .proj-card:hover { border-color: #4ade8040; transform: translateY(-3px); }
-.proj-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.proj-card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .proj-card-img-placeholder { width: 100%; height: 180px; background: #111; display: block; border-bottom: 1px solid #1e1e1e; }
 .proj-card-body { padding: 1.2rem; }
 .proj-card-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: #f0ede8; margin-bottom: 4px; }
@@ -241,7 +241,7 @@ PROJECTS = [
         "desc": "Designed a campus navigation app that caters not only to academic institutions but also to large corporate campuses. Conducted user interviews and usability testing with over 50 participants to validate design decisions.",
         "status": "Live",
         "tags": ["Figma", "UX Research", "Prototyping", "Mobile"],
-        "img_url": "assets/navu_splash.jpg", 
+        "img_url": "https://raw.githubusercontent.com/daas-me/portfolio/main/assets/navu_splash.jpg", 
         "link": "https://www.figma.com/design/h981ildHFNZQXtHN6IOe5o/NavU-Mockup?node-id=0-1&t=WVygcCgq8vdul8Qf-1",   
     },
     {
