@@ -1,11 +1,4 @@
 import streamlit as st
-import base64
-
-def get_img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-img_b64 = get_img_base64("assets/sabandal.jpg")
 
 # ─────────────────────────────────────────────
 #  PAGE CONFIG
@@ -142,7 +135,7 @@ with st.sidebar:
     st.markdown(f"""
     <div style='text-align:center;padding:1.5rem 0 1rem;'>
         <div style='width:88px;height:88px;border-radius:50%;margin:0 auto 1rem;overflow:hidden;border:1px solid #4ade8040;'>
-            <img src="data:image/jpeg;base64,{img_b64}"
+            <img src="https://raw.githubusercontent.com/daas-me/portfolio/main/assets/sabandal.jpg"
                  style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
         </div>
         <div style='font-family:Playfair Display,serif;font-size:1.2rem;color:#f0ede8;'>Dwight Angelo Sabandal</div>
@@ -444,7 +437,7 @@ elif page == "About Me":
         st.markdown(f"""
         <div class="card" style="padding:2rem;">
             <div style="width:70px;height:70px;border-radius:50%;margin:0 auto 1.2rem;overflow:hidden;border:1px solid #4ade8040;">
-                <img src="data:image/jpeg;base64,{img_b64}"
+                <img src="https://raw.githubusercontent.com/daas-me/portfolio/main/assets/sabandal.jpg"
                      style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
             </div>
             <div style="font-family:Playfair Display,serif;font-size:1.15rem;color:#f0ede8;text-align:center;">Dwight Angelo Sabandal</div>
